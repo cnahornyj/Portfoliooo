@@ -126,20 +126,100 @@ body {
     width: 50%;
 }
 
-h1 {
+/* Style global de l'article */
+.myself {
+    display: flex;               /* Affichage en flexbox pour positionner l'image et le texte côte à côte */
+    align-items: stretch;        /* Aligne les éléments sur la hauteur maximale possible */
+    gap: 20px;                   /* Espace entre l'image et le texte */
+    margin-bottom: 40px;
+    justify-content: space-between;  /* S'assure que l'image et le texte sont espacés */
+}
+
+/* Style de l'image */
+.myself img {
+    max-width: 50%;              /* L'image occupe 50% de la largeur */
+    height: auto;                /* L'image garde son ratio */
+    object-fit: contain;         /* Adapte l'image au conteneur en conservant son ratio */
+}
+
+/* Style du texte */
+.myself > div {
+    flex-grow: 1;                /* Le texte occupe l'espace restant */
+    padding: 0 20px;             /* Ajoute un peu de marge intérieure au texte */
+}
+
+.myself h2 {
+    font-size: 1.75rem;             /* Taille de base des titres */
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.myself p {
+    line-height: 1.5;            /* Espace entre les lignes pour améliorer la lisibilité */
+    text-align: justify;
+}
+
+/* Media query pour les écrans entre 1400px et 1500px */
+@media (max-width: 1500px) and (min-width: 1400px) {
+    .myself h2 {
+        font-size: 1.5em; /* 1.75em - 0.25em */
+    }
+    
+    .myself p {
+        font-size: 0.95em; /* 1em - 0.25em */
+    }
+}
+
+/* Media query pour les écrans entre 1300px et 1400px */
+@media (max-width: 1400px) and (min-width: 1300px) {
+    .myself h2 {
+        font-size: 1.25em; /* 1.5em - 0.25em */
+    }
+    
+    .myself p {
+        font-size: 0.90em; /* 0.75em - 0.25em */
+    }
+}
+
+/* Media query pour les écrans entre 1200px et 1300px */
+@media (max-width: 1300px) and (min-width: 1200px) {
+    .myself h2 {
+        font-size: 1.25em; /* 1.25em - 0.25em */
+    }
+    
+    .myself p {
+        font-size: 0.85em; /* 0.5em - 0.25em */
+    }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .myself {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myself > img {
+        width: 95%;
+    }
+}
+
+
+
+.presentation > div > h1 {
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1.5px;
 }
 
-h2 {
+.presentation > div > h2 {
     font-size: 1.17em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     line-height: 1.25;
 }
 
-.presentation > div {
+.presentation > div, .myself > div {
     padding: 25px;
 }
 
