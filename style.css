@@ -120,7 +120,7 @@ body {
     }
 }
 
-.presentation, .contact {
+.presentation, .contact, .thanks {
     display: flex;
     padding: 75px 25px;
     background: #f5f7fa;
@@ -677,6 +677,9 @@ button:hover {
     background: #474747; /* Couleur de fond lors du survol */
 }
 
+.thanks h1 {
+    margin: auto;
+}
 
 /* Footer */
 footer {
