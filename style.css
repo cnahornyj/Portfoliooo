@@ -334,9 +334,9 @@ body {
 }
 
 .loupe {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+    width: 24px !important;
+    height: 24px !important;
+    cursor: pointer !important;
     transition: transform 0.3s ease;
 }
 
@@ -388,6 +388,34 @@ body {
     border-bottom: 1px solid lightgrey;
 }
 
+.popup-content h5 {
+    font-size: 1em;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.fonctionnalities li {
+    font-size: 1em;
+}
+
+.button-row {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.button-row a {
+    text-decoration: none;
+    color: white;
+    background: #585757;
+    padding: 15px;
+    border: none;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
 .close-popup {
     position: absolute;
     top: 10px;
@@ -427,6 +455,115 @@ body {
         width: 90%; /* Ajuste légèrement la largeur pour les petits écrans */
     }
 }
+
+.projects {
+    padding: 25px;
+    background: #f5f7fa;
+}
+
+.projects h2 {
+    font-size: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;    
+    margin-bottom: 0px;
+}
+
+/* Styles du conteneur principal "projects" */
+.projects {
+    padding: 50px 25px;
+    background: #f5f7fa;
+}
+
+.projects h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* Styles des cartes */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les cartes */
+    grid-gap: 20px; /* Espace entre les cartes */
+    margin-top: 30px;
+    justify-items: center;
+}
+
+/* Styles individuels pour chaque card */
+.card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Transition pour l'agrandissement */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+/* Image dans la carte */
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image pour couvrir tout l'espace */
+    filter: saturate(0.5);
+}
+
+/* Titre centré sur l'image */
+.card-image h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le texte */
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Légère ombre pour le texte */
+    z-index: 1;
+}
+
+/* Icône de loupe en bas à droite */
+.icon-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.front-stacks {
+    margin-bottom: 8px;
+}
+
+.back-stacks {
+    margin-top: 8px;
+}
+
+/* Media Query pour écrans entre 1000px et 1453px */
+@media (max-width: 1453px) and (min-width: 1000px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes dans cette plage de taille */
+    }
+}
+
+/* Media Query pour petits écrans */
+@media (max-width: 999px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* 1 colonne pour mobile */
+    }
+
+    .card {
+        width: 100%; /* La carte occupe toute la largeur */
+    }
+}
+
 
 
 /* Footer */

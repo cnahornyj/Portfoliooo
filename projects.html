@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les projets réalisés de Clara NAHORNYJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <span class="company-name">Clara NAHORNYJ</span>
+            </div>
+            <div class="navbar-right">
+                <a href="aboutme.html">A PROPOS DE MOI</a>
+                <a href="contact.html">MES PROJETS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <a href="aboutme.html">A PROPOS DE MOI</a>
+            <a href="contact.html">MES PROJETS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+    <section>
+        <article class="projects">
+            <h2>Mes projets</h2>
+            <h3>Un aperçu de mes réalisations</h3>
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg" alt="Compétence 1">
+                        <h4>Kasa</h4>
+                        <div class="icon-container">
+                            <img class="loupe" src="./assets/search-icon-light.png" alt="Icône Loupe" data-target="popup1">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://cnahornyj.github.io/portfolio/assets/img/southpark_preview.png" alt="Compétence 2">
+                        <h4>South Park Memory Card</h4>
+                        <div class="icon-container">
+                            <img class="loupe" src="./assets/search-icon-light.png" alt="Icône Loupe" data-target="popup2">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.desenio.com/zoom/16686_4-57867.jpg" alt="Compétence 3">
+                        <h4>Verydisco</h4>
+                        <div class="icon-container">
+                            <img class="loupe" src="./assets/search-icon-light.png" alt="Icône Loupe" data-target="popup3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popups pour chaque projet -->
+                <div id="popup1" class="popup">
+                    <div class="popup-content">
+                        <h4>Plateforme de locations entre particuliers</h4>
+                        <h5>Découvrez Kasa, votre nouvelle plateforme de location d'appartements entre particuliers ! Que vous recherchiez un pied-à-terre pour un week-end, un appartement pour vos vacances, ou un logement temporaire pour un séjour professionnel, Kasa vous connecte directement avec des propriétaires de confiance. Explorez une vaste sélection d'annonces, trouvez des hébergements adaptés à vos besoins et à votre budget, et profitez de tarifs avantageux. Louez en toute sérénité grâce aux avis des utilisateurs et redécouvrez le plaisir de voyager avec Kasa !</h5>
+                        <p>Fonctionnalités :</p>
+                        <ul class="fonctionnalities">
+                            <li>Consulter la liste des logements</li>
+                            <li>Consulter le détail de chaque logement</li>
+                        </ul>
+                        <p>Stacks techniques : JavaScript, React</p>
+                        <div class="button-row">
+                            <a href="https://cnahornyj.github.io/kasa/" target="_blank" class="left-button">DEMO ▶</a>
+                            <a href="https://github.com/cnahornyj/la-chouette-agence" target="_blank" class="right-button">CODE ‹/› </a>                        
+                        </div>
+                        <span class="close-popup">&times;</span>
+                    </div>
+                </div>
+
+                <div id="popup2" class="popup">
+                    <div class="popup-content">
+                        <h4>South Park Memory Card</h4>
+                        <h5>Entrez dans l'univers délirant de South Park avec ce jeu de memory pas comme les autres ! Choisissez votre personnage parmi les figures emblématiques de la ville comme Stan, Kyle, Cartman, ou Kenny, puis sélectionnez également le personnage de votre adversaire. Une fois les protagonistes choisis, préparez-vous à une bataille de mémoire pour retrouver les paires d'armes cachées. Chaque carte cache une arme utilisée dans les moments les plus mémorables de la série. Votre objectif est de trouver toutes les paires d'armes avant votre adversaire pour remporter la victoire. Que le meilleur fan gagne et que la bataille commence ! Et comme dirait Cartman : "Respect my authoritah!"</h5>
+                        <p>Fonctionnalités :</p>
+                        <ul class="fonctionnalities">
+                            <li>Choisir son personnage de la série South Park</li>
+                            <li>Mettre en place des effets sonores immersifs pour une expérience de jeu engageante</li>
+                            <li>Distributer de manière aléatoire les cartes à chaque nouvelle partie pour garantir une rejouabilité</li>
+                        </ul>
+                        <p>Stacks techniques : JavaScript, React, Redux</p>
+                        <div class="button-row">
+                            <a href="https://cnahornyj.github.io/memory-game/" target="_blank" class="left-button">DEMO ▶</a>
+                            <a href="https://github.com/cnahornyj/memory-game" target="_blank" class="right-button">CODE ‹/› </a>                        
+                        </div>
+                        <span class="close-popup">&times;</span>
+                    </div>
+                </div>
+
+                <div id="popup3" class="popup">
+                    <div class="popup-content">
+                        <h4>Application d'organisation de voyages</h4>
+                        <h5>Planifiez vos voyages sans stress avec Discovery, l'application ultime pour organiser vos aventures ! Que ce soit pour des vacances en famille, un road trip entre amis ou un voyage d'affaires, Discovery vous aide à centraliser toutes vos réservations, itinéraires, et listes de tâches en un seul endroit. Créez facilement des plans de voyage détaillés, recevez des rappels importants, partagez votre itinéraire avec vos compagnons de voyage et découvrez des recommandations personnalisées. Simplifiez vos préparatifs et profitez pleinement de chaque moment grâce à Discovery !</h5>
+                        <p>Fonctionnalités :</p>
+                        <ul class="fonctionnalities">
+                            <li>Découvrir des lieux selon ses préférences de visite dans la ville renseignée</li>
+                            <li>Planifier ses visites selon les dates renseignées et les horaires d'ouverture des lieux</li>
+                            <li>Partager ses itinéraires ou des lieux à des amis</li>
+                        </ul>
+                        <p>Stacks techniques : </p>
+                        <p class="front-stacks">Front-end: JavaScript, React, Redux</p>
+                        <p class="back-stacks">Back-end: NodeJS, Express, MongoDB</p>
+                        <p>API tierces : Google Maps API</p>
+                        <div class="button-row">
+                            <a href="https://www.figma.com/file/o088bFJR3adgy7k233F62O/Discovery?type=design&node-id=0%3A1&mode=design&t=wzKXVridG9zyA2EY-1" target="_blank" class="left-button">DEMO ▶</a>
+                            <a href="https://github.com/cnahornyj/verydisco" target="_blank" class="right-button">CODE ‹/› </a>                        
+                        </div>
+                        <span class="close-popup">&times;</span>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+    <footer>        
+        <a href="https://www.linkedin.com/in/claranahornyj/" target="_blank"><img src='./assets/linkedin_dark_icon.png'/></a>
+        <a href="https://github.com/cnahornyj" target="_blank"><img src='./assets/github_dark_icon.png'/></a>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
