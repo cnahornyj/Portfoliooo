@@ -690,5 +690,6 @@ footer {
 
 footer > a > img {
     width: 25px;
+    height: 25px;
     padding: 0 2.5px;
 }
