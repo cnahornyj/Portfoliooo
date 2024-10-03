@@ -239,6 +239,10 @@ body {
     cursor: pointer;
 }
 
+.presentation > div > button:hover {
+    background: #474747; /* Couleur de fond lors du survol */
+}
+
 .presentation > div > button > a {
     color: white;
     text-decoration: none;
