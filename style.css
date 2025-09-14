@@ -565,13 +565,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajuste l'image pour couvrir tout l'espace */
-    filter: saturate(0.5);
 }
 
 /* Titre centré sur l'image */
 .card-image h4 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centre le texte */
     color: white;
